@@ -1,7 +1,7 @@
 import Link from "next/link";
-
+export const dynamic = 'force-dynamic';
 export default async function Page() {
-  await new Promise((resolve) => setTimeout(resolve, 10000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
 
   return (
     <div className="flex flex-col items-center justify-center h-full w-full">
